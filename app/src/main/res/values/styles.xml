@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/md_blue_700</item>
+        <item name="colorPrimaryDark">@color/md_blue_700</item>
+        <item name="colorAccent">@color/md_blue_700</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_blue_700</item>
+    </style>
+
+    <style name="DefaultEditText">
+        <item name="android:padding">5dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/md_white_1000</item>
+        <item name="android:textColorSecondary">@color/md_white_1000</item>
+        <item name="android:colorForeground">@color/md_white_1000</item>
+        <item name="android:colorBackground">@color/md_white_1000</item>
+    </style>
+
+    <style name="checkBoxStyleRed" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/md_red_900</item>
+        <item name="android:textColorSecondary">@color/md_red_900</item>
+        <item name="android:colorForeground">@color/md_red_900</item>
+        <item name="android:colorBackground">@color/md_red_900</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="backgroundTint">@color/md_white_1000</item>
+    </style>
+
+    <style name="TextSmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextSmallBold" parent="TextSmall">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMedium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextMediumBold" parent="TextMedium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/fonts_16</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:fontFamily">fonts/</item>
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">@dimen/fonts_14</item>
+        <item name="android:textColor">@color/md_white_1000_75</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TabTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">@dimen/fonts_17</item>
+        <item name="android:textColor">@color/md_yellow_400</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DateTimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_blue_700</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="progresser" parent="@android:style/Widget.ProgressBar">
+        <item name="android:color">@color/md_white_1000</item>
+        <item name="android:tint">@color/md_white_1000</item>
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+</resources>

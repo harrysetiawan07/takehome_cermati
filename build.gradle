@@ -1,0 +1,76 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'
+
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'me.tatarka:gradle-retrolambda:3.4.0'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 18
+    targetSdkVersion = 21
+    compileSdkVersion = 27
+    buildToolsVersion = '27.1.1'
+    nameVersion = 'Alpha Testing'
+    identityVersion = 'v1.0'
+    codeVersion = 20190802
+
+    // dependencies versions
+    appCompat = '27.1.1'
+    supportDesign = '27.1.1'
+    supportVector = '27.1.1'
+    constraintLayout = '1.0.2'
+    espresso = '3.0.2'
+    junit = '4.12'
+    runer = '1.0.2'
+    timber = '4.1.2'
+    firebase = '10.0.1'
+    retrofit = '2.2.0'
+    okHttp = '3.9.0'
+    rxJava = '1.2.1'
+    rxJavaNdroid = '1.2.1'
+    rxBinding = '0.4.0'
+    butterKnife = '8.8.1'
+    greendao = '3.2.2'
+    mpChart = 'v2.2.4'
+    animatorRecycler = '2.2.7'
+    spinKit = '1.2.0'
+    picasso = '2.5.2'
+    constraint = '1.0.2'
+    appintro = '3.3.0'
+    datePicker = 'library:1.9'
+    filePicker = '2.1.1'
+    pdfViewer = '1.6.0'
+    permissionsdispatcher = '3.0.1'
+    jetbrains = '15.0'
+    imageLoader = '1.9.5'
+    transition = '1.7.9'
+    calligrapher = '1.0'
+    animatedProgress = '0.2.4'
+    rvAnimator = '2.3.0'
+}

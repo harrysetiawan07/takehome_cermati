@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Harry_Setiawan_takehome</string>
+    <!--Transition Name-->
+    <string name="logoTransitionName">logo_transition</string>
+    <string name="logoTransitionName2">logo_transition_2</string>
+    <string name="bgTransitionName">bg_transition</string>
+
+    <string name="tvInfoCreator">Harry Setiawan</string>
+    <string name="tvInfoMailCreator">(harry.setiawan.hs7@gmail.com)</string>
+    <string name="KeyOfEnter">ENTER</string>
+    <string name="title_activity_a">a</string>
+    <string name="titleDataUser">Data Users</string>
+    <string name="pleaseWait">Synchronize Data</string>
+    <string name="titleInformationDialog">Information</string>
+    <string name="ok">OK</string>
+    <string name="search">Search Github Users</string>
+    <string name="infoAPI">Query Search Username is Required, Data not found.</string>
+</resources>

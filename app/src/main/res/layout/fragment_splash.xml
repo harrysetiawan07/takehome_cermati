@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/fragment1_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:transitionName="@string/bgTransitionName"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment2_bg"
+        android:background="@mipmap/bg_texture"
+        android:alpha="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:transitionName="@string/bgTransitionName"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/fragment1_logo"
+                android:layout_width="@dimen/width_250"
+                android:layout_height="@dimen/height_200"
+                android:src="@mipmap/logo"
+                android:layout_centerHorizontal="true"
+                android:transitionName="@string/logoTransitionName" />
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:layout_marginBottom="@dimen/padding_10"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/material_design_horizontal_progressbar"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="25dp"
+                android:indeterminate="true"
+                app:mpb_progressStyle="horizontal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
